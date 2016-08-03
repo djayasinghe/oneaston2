@@ -1,0 +1,252 @@
+<template name="index">
+    <section class="video-bg-wrapper js-height-full">
+        <video autoplay loop poster="/images/home-bg.png" id="bgvid" style="width:100%" class="hidden-xs">
+            <source src="/oceanold.webm" type="video/webm">
+            <source src="/oceanold.mp4" type="video/mp4"> Sorry, your browser doesn't support HTML5 video in WebM with VP8 or MP4 with H.264.
+            <!-- You can embed a Flash player here, to play your mp4 video in older browsers -->
+        </video>
+        <div class="dark-bg js-height-full"></div>
+        <div class="dark-bg js-height-full home-bg-image hidden-lg hidden-sm hidden-md"></div>
+
+        <div class="intro">
+            <div class="hello"> </div>
+            <h1 class="animated fadeInDown">Excellence in<br> Wealth Solutions Delivery </h1>
+<!--
+            <div class="who-creates animated fadeInUp">with key expertise in Wealth Management,
+                <br> Risk Management, Information Governance and Compliance.</div>
+-->
+        </div>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+    </section>
+
+    <!-- Case studies 3 boxes  -->
+    <section class="inner-section" style="overflow:hidden;">
+        <h2 class="main-header wp1-1">Embracing the Opportunities in a <br>Changing Industry</h2>
+
+        <div class="row no-padding" id="wp1">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="three-section-bg wp1" >
+                    <div class="section-box ">
+                        <img src="/images/box-img1.jpg">
+                        <h3>Digital Channels</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit. Ut et lacus erat. Curabitur sit amet turpis consectetur, porttitor leo in, vehicula nulla. Aenean vitae ligula est.</p>
+                    </div>
+                </div>
+                <div class="three-section-bg wp1 delay-04s" ><div class="section-box">
+                        <img src="/images/box-img2.jpg">
+                        <h3>Efficient Order Processing</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit. Ut et lacus erat. Curabitur sit amet turpis consectetur, porttitor leo in, vehicula nulla. Aenean vitae ligula est.</p>
+                    </div></div>
+                <div class="three-section-bg wp1 delay-08s"><div class="section-box">
+                        <img src="/images/box-img3.jpg">
+                        <h3>Exposure Management</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit. Ut et lacus erat. Curabitur sit amet turpis consectetur, porttitor leo in, vehicula nulla. Aenean vitae ligula est.</p>
+                    </div></div>
+            </div>
+        </div>
+
+    </section>
+<section class="inner-section home-bgimage-2">
+    
+    <h2 class="main-header wp2-1"  style="color:#fff;margin:0.6em 0 1em;">Application Managment Support</h2>
+
+        <div class="row no-padding" id="wp2">
+            <div class="col-sm-offset-1 col-sm-10" style="font-size:1em">
+                <div class="three-section-bg wp2" >
+                    <div class="section-box " >
+                        <img src="/images/box-img4.jpg">
+                        <h3>Support Services</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit. Ut et lacus erat. Curabitur sit amet turpis consectetur, porttitor leo in, vehicula nulla. Aenean vitae ligula est.</p>
+                    </div>
+                </div>
+                <div class="three-section-bg wp2 delay-04s" ><div class="section-box">
+                        <img src="/images/box-img5.jpg">
+                        <h3>Testing Services</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit. Ut et lacus erat. Curabitur sit amet turpis consectetur, porttitor leo in, vehicula nulla. Aenean vitae ligula est.</p>
+                    </div></div>
+                <div class="three-section-bg wp2 delay-08s"><div class="section-box">
+                        <img src="/images/box-img6.jpg">
+                        <h3>Support Portal</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit. Ut et lacus erat. Curabitur sit amet turpis consectetur, porttitor leo in, vehicula nulla. Aenean vitae ligula est.</p>
+                    </div></div>
+            </div>
+        </div>
+       <br>
+    </section>
+   
+<section class="inner-section carousel-bg-image">
+<!--    <h2 class="home-products-section-header"><span class="one-text-color"></span>Explore Our Products</h2>-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner " role="listbox">
+      <div class="item active">
+          <div class="col-sm-offset-1 col-sm-4">
+              <h3>Explore our product called</h3>
+              <h2><span>One</span>View</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit.</p>
+          <div class="col-sm-8 no-padding bt-align-xs"><a href=" {{pathFor route='one_view' name='one_view'}}" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">View More</a></div>
+          </div>
+          <div class=" col-sm-6"> <img src="/images/OV.png" alt="OneView"  align="middle"></div>
+      </div>
+
+      <div class="item">
+        <div class="col-sm-offset-1 col-sm-4">
+            <h3>Explore our product called</h3>
+            <h2><span>One</span>Ledger</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit.</p>
+          <div class="col-sm-8 no-padding bt-align-xs"><a href=" {{pathFor route='one_ledger' name='one_ledger'}}" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">View More</a></div>
+          </div>
+          <div class=" col-sm-6"> <img src="/images/OL.png" align="middle" alt="OneLedger" width="70%"  ></div>
+      </div>
+    
+      <div class="item">
+        <div class="col-sm-offset-1 col-sm-4">
+            <h3>Explore our product called</h3>
+            <h2><span>One</span>Notify</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit.</p>
+          <div class="col-sm-8 no-padding bt-align-xs"><a href=" {{pathFor route='one_notify' name='one_notify'}}" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">View More</a></div>
+          </div>
+          <div class=" col-sm-6"> <img src="/images/ON.png" align="middle" alt="OneNotify"  ></div>
+      </div>
+
+      <div class="item">
+        <div class="col-sm-offset-1 col-sm-4">
+            <h3>Explore our product called</h3>
+            <h2><span>One</span>Event</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam vel metus mattis maximus non quis elit.</p>
+          <div class="col-sm-8 no-padding bt-align-xs"><a href=" {{pathFor route='one_event' name='one_event'}}" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">View More</a></div>
+          </div>
+          <div class=" col-sm-6"> <img src="/images/OE.png" align="middle" alt="OneEvent" width="70%"  ></div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    
+    </section> 
+    <section class="inner-section hover-effect-wrapper no-padding">
+    <div class="grid">
+        <div class="col-sm-3 no-padding">
+        <figure class="effect-jazz">
+						<img src="/images/box-img1.jpg" alt="Wealth Solutions"/>
+						<figcaption>
+							<h2> <span>Temenos</span><br> WealthSuite</h2>
+							<p>Expertise in Key Industry<br> Wealth Solutions
+                            <br>
+<!--                                <a href="#" class="btn btn-primary btn-xs">View more</a>-->
+                            </p>
+							
+						</figcaption>			
+					</figure>
+        </div>
+        <div class="col-sm-3 no-padding">
+        <figure class="effect-jazz">
+						<img src="/images/box-img7.jpg" alt="Wealth Solutions"/>
+						<figcaption>
+							<h2> <span>T24</span><br>Core Banking Software</h2>
+							<p>Expertise in Key Industry <br>Wealth Solutions
+                            <br>
+<!--                                <a href="#" class="btn btn-primary btn-xs">View more</a>-->
+                            </p>
+							
+						</figcaption>			
+					</figure>
+        </div>
+        <div class="col-sm-3 no-padding">
+        <figure class="effect-jazz">
+						<img src="/images/box-img8.jpg" alt="Wealth Solutions"/>
+						<figcaption>
+							<h2> <span>Triple'A Plus</span><br>Private Banking Solutions</h2>
+							<p>Expertise in Key Industry<br> Wealth Solutions<br>
+<!--                                <a href="#" class="btn btn-primary btn-xs">View more</a>-->
+                            </p>
+							
+						</figcaption>			
+					</figure>
+        </div>
+        <div class="col-sm-3 no-padding">
+        <figure class="effect-jazz">
+						<img src="/images/box-img6.jpg" alt="Wealth Solutions"/>
+						<figcaption>
+							<h2> <span>Impressio</span><br>Report Managment Software</h2>
+							<p>Expertise in Key Industry <br> Wealth Solutions
+<!--                                <a href="#" class="btn btn-primary btn-xs">View more</a>-->
+                            </p>
+							
+						</figcaption>			
+					</figure>
+        </div>
+        
+				</div>
+    </section>
+     <section class="inner-section" style="overflow:hidden;margin-bottom:5em;">
+        <h2 class="main-header">Expertise in Key Industry Wealth Solutions</h2>
+         <div class="col-sm-offset-4 col-sm-4 text-center"><a href="" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">Case Studies</a></div>
+         <br>
+         <br>
+    </section>
+<!--
+    <section class="inner-section ticker-bg">
+        <div class="col-md-9"><h2 class="text-center">Need more Information? Contact our Support Portal.</h2></div>
+        <div class="col-md-3 text-center"><a href="" class="btn white-border-bt hvr-shutter-out-horizontal">Contact us</a></div>
+    </section>
+-->
+     <section class="inner-section no-padding" id="wp3">
+         <div class="row no-margin latest-news-bg ">
+             <div class="col-sm-4 no-padding wp3 "><img src="/images/box-img11.jpg"></div>
+             <div class="col-sm-4 no-padding wp3 delay-04s apply-min-hight">
+                <div class="col-sm-offset-2 col-sm-9 home-latest-news-bg text-right">
+                 <h2 class="text-right">Bank Of Montreal T24 Implementation</h2>
+                    <a href="{{pathFor route='news1' name='news1'}}" class="btn btn-sm white-border-bt hvr-shutter-out-horizontal">Read More</a>
+                 </div>
+                <div class="col-sm-1 no-padding"><i class="ion-arrow-right-b hidden-xs"></i></div>
+             </div>
+             <div class="col-sm-4 no-padding wp3 delay-08s">
+             <img src="/images/box-img10.jpg"></div>
+        </div>
+         <div class="row no-margin latest-news-bg"> 
+             <div class="col-sm-4 no-padding wp3 apply-min-hight">
+                <div class="col-sm-offset-2 col-sm-9 home-latest-news-bg text-left">
+                    <i class="ion-arrow-up-b hidden-xs" style="float:none;"></i><br>
+                 <h2 class="text-left" style="margin-top:-0.8em">OneAston Becomes Temenos Certified Partner</h2>
+                    <a href="{{pathFor route='news2' name='news2'}}" class="btn btn-sm white-border-bt hvr-shutter-out-horizontal">Read More</a>
+                 </div>
+                <div class="col-sm-1 no-padding"></div>
+             </div>
+             <div class="col-sm-4 no-padding wp3 delay-04s">
+             <img src="/images/box-img9.jpg"></div>
+             <div class="col-sm-4 no-padding wp3 delay-08s apply-min-hight">
+                 <div class="col-sm-1 no-padding"><i class="ion-arrow-left-b hidden-xs" style="float:right"></i></div>
+                <div class="col-sm-9 home-latest-news-bg text-left">
+                 <h2 class="text-left">Testing Services Launched</h2>
+                    <a href="{{pathFor route='news3' name='news3'}}" class="btn btn-sm white-border-bt hvr-shutter-out-horizontal">Read More</a>
+                 </div>
+                
+             </div>
+        </div>
+    </section>
+</template>

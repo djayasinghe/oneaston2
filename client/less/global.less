@@ -1,0 +1,341 @@
+//
+//Authour Dilan Jayasinghe
+//OneAston Pte Ltd UI/UX Consultnt
+//
+@import "less-prefixer.import.less";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@roboto: "Helvetica Neue",
+"Open Sans",
+Helvetica,
+Arial,
+"Lucida Grande",
+sans-serif;
+@oneastonDefaultBlue: #3963ae;
+@oneastonDarkBlue: #1d437d;
+@black: #000;
+@white: #fff;
+@btColor:#118ebd;
+@footerTop:#223238;
+@footerBottom:#131f27;
+@btHoverColor:#04678c;
+@roboto:'Roboto', sans-serif;
+@import "templates.import.less";
+@import "right-slider.import.less";
+@font-face {
+  font-family: 'oneaston';
+  src: url('fonts/OneAston_bold_condo.eot'); /* IE9 Compat Modes */
+  src: url('fonts/OneAston_bold_condo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/OneAston_bold_condo.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/OneAston_bold_condo.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/OneAston_bold_condo.ttf')  format('truetype'),
+      url('fonts/OneAston_bold_condo.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+}
+body {
+	font: 400 12px/1.8 'Roboto', sans-serif;
+	color: #666;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #3fb0ac;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+p{
+    font-family: @roboto;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+/* ---------------------------------------------- /*
+ * Transition elsements
+/* ---------------------------------------------- */
+
+
+a,
+.btn {
+	-webkit-transition: all 0.125s ease-in-out 0s;
+	   -moz-transition: all 0.125s ease-in-out 0s;
+		-ms-transition: all 0.125s ease-in-out 0s;
+		 -o-transition: all 0.125s ease-in-out 0s;
+			transition: all 0.125s ease-in-out 0s;
+}
+
+/* ---------------------------------------------- /*
+ * Reset box-shadow
+/* ---------------------------------------------- */
+
+.btn,
+.form-control,
+.form-control:hover,
+.form-control:focus,
+.navbar-custom .dropdown-menu {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+.no-padding{
+    padding: 0 !important;
+}
+.no-margin{
+    margin: 0 !important;
+}
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @roboto;
+	//text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 5px 0 5px;
+	color: #222;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0 0 30px;
+}
+
+h3 {
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	margin: 0 0 5px;
+}
+
+h4 {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 1em;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+.one-text-color{color:@oneastonDefaultBlue;}
+.mtop20{
+    margin-top: 20px !important;
+}
+/* ---------------------------------------------- /*
+ * Reset border-radius
+/* ---------------------------------------------- */
+
+.btn,
+.iconbox,
+.progress,
+#filter li,
+.scroll-up a,
+.form-control,
+.input-group-addon {
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+		 -o-border-radius: 3px;
+			border-radius: 3px;
+}
+
+/* ---------------------------------------------- /*
+ * Alerts style
+/* ---------------------------------------------- */
+
+.alert {
+	border: 0;
+}
+
+/* ---------------------------------------------- /*
+ * Progress bars
+/* ---------------------------------------------- */
+
+.progress,
+.progress-bar {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+
+.progress-bar {
+	background-color: #3fb0ac;
+}
+
+/* ---------------------------------------------- /*
+ * Tabs
+/* ---------------------------------------------- */
+
+.nav-pills, .nav-tabs {
+	margin-bottom: 20px;
+}
+
+.nav-pills > li > a {
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+		 -o-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.nav-tabs > li > a {
+	-webkit-border-radius: 3px 3px 0 0;
+	   -moz-border-radius: 3px 3px 0 0;
+		 -o-border-radius: 3px 3px 0 0;
+			border-radius: 3px 3px 0 0;
+}
+
+
+/* ---------------------------------------------- /*
+ * Panels
+/* ---------------------------------------------- */
+
+.panel {
+	border: 0;
+}
+
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+	border: 0;
+}
+
+/* ---------------------------------------------- /*
+ * Modal
+/* ---------------------------------------------- */
+
+.modal-content {
+	border: 0;
+}
+
+/* ---------------------------------------------- /*
+ * Labels
+/* ---------------------------------------------- */
+
+.label {
+	padding: .2em .6em .2em;
+	font-size: 70%;
+}
+
+.label-custom-1 {
+	background: #3fb0ac;
+}
+
+.label-custom-2 {
+	background: #222;
+}
+
+/* ---------------------------------------------- /*
+ * Input-group
+/* ---------------------------------------------- */
+
+.input-group .form-control {
+	z-index: auto;
+}
+
+.input-group-addon {
+	background: #D8E1E4;
+	border: 2px solid #D8E1E4;
+	padding: 6px 15px;
+	font-weight: 700;
+}
+
+/* ---------------------------------------------- /*
+ * Inputs styles
+/* ---------------------------------------------- */
+
+.form-control {
+	background: #FFF;
+	border: 2px solid #D8E1E4;
+	font-size: 12px;
+	padding: 0 15px;
+}
+
+.input-lg,
+.form-horizontal .form-group-lg .form-control {
+	height: 38px;
+	font-size: 13px;
+}
+
+.input-sm,
+.form-horizontal .form-group-sm .form-control {
+	font-size: 11px;
+	height: 30px;
+}
+
+textarea.form-control {
+	padding: 15px;
+}
+
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+
+.btn {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 8px 26px;
+	border: 0;
+    border-radius: 0;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+	outline: inherit !important;
+}
+
+.white-border-bt{
+    margin-top: 0.6em;
+    border: 2px solid @white;
+    padding: 1em 2em;
+    font-family: @roboto;
+    color:@white;
+    &.hvr-shutter-out-horizontal{
+    background: none;
+    &:before{
+        background: @btHoverColor;
+    }
+}
+}
+.hvr-shutter-out-horizontal{
+    background: @btColor;
+    &:before{
+        background: @btHoverColor;
+    }
+}
+/* Button size */
+
+.btn-lg,
+.btn-group-lg > .btn {
+	padding: 10px 25px;
+	font-size: 13px;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+	padding: 6px 25px;
+	font-size: 11px;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+	padding: 5px 25px;
+	font-size: 10px;
+}
+
+.btn .icon-before {
+	margin-right: 6px;
+}
+
+.btn .icon-after {
+	margin-left: 6px;
+}
