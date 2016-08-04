@@ -66,6 +66,9 @@
   color: #3963ae !important;
   border-bottom: 3px solid #3963ae;
 }
+.navbar .menu2 svg {
+  fill: rgba(0, 0, 0, 0.75) !important;
+}
 .navbar svg {
   float: left;
   width: 12px;
