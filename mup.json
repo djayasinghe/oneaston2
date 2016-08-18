@@ -37,3 +37,4 @@
   // before mup checks that, it will wait for no. of seconds configured below
   "deployCheckWaitTime": 15
 }
+

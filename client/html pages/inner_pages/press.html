@@ -1,0 +1,100 @@
+<template name="press">
+    <section class="inner-page-main-bg-image">
+        <img src="images/ip-News.jpg">
+        <div class="intro">
+            <h1 class="animated fadeInDown">What’s New at OneAston</h1>
+            <div class="who-creates animated fadeInUp">There is no substitute for Experience</div>
+        </div>
+    </section>
+    <section class="inner-section" style="overflow:hidden;">
+        <div class="col-sm-offset-2 col-sm-8">
+            <div class="panel-group case-studies-wrapper" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <div class=" col-sm-12">
+                                <div class="panel-heading">
+                                    <h3>OneAston Becomes a Temenos Certified Partner</h3>
+                                    <div class="no-padding col-sm-2 ">
+                                        <img src="images/News_temenos-partner1.jpg" width="100%">
+                                    </div>
+                                    <div class="no-padding col-sm-10 ">
+                                        <p>Building on the growth of the Private Banking industry in Asia and the successful collaboration with Temenos in the region, OneAston has become a certified partner of Temenos for WeathSuite. Under the certified partner program, OneAston will have access into the Temenos partner support network and will be able to participate in the Temenos training and resource certification initiative. </p>
+                                        <a class="news_1 btn btn-primary btn-xs hvr-shutter-out-horizontal" data-toggle="modal" data-target="#News_1">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <div class=" col-sm-12">
+                                <div class="panel-heading">
+                                    <h3>Bank of Montreal T24 project</h3>
+                                    <div class="no-padding col-sm-2 ">
+                                        <img src="../images/News_bank_of.jpg" width="100%">
+                                    </div>
+                                    <div class="no-padding col-sm-10 ">
+                                        <p>OneAston has been selected as the implementation partner by the Bank of Montreal for their Temenos T24 implementation in Singapore and Hong Kong. As an existing user of Triple’A Plus, Bank of Montreal will be replacing their existing core banking system with T24 adopting the integrated WealthSuite strategy of Temenos. </p>
+                                        <a class="news_1 btn btn-primary btn-xs hvr-shutter-out-horizontal" data-toggle="modal" data-target="#News_2">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <div class=" col-sm-12">
+                                <div class="panel-heading">
+                                    <h3>Expanding the Digital Channel - OneNotify Launched</h3>
+                                    <div class="no-padding col-sm-2 ">
+                                        <img src="images/News_testing.jpg" width="100%">
+                                    </div>
+                                    <div class="no-padding col-sm-10 ">
+                                        <p>OneAston has launched its new digital channel delivery application OneNotify. OneNotify allows events detected in external systems to trigger notification messages to be sent by SMS, WeChat or Email. The notification messages are configurable and can be sent in a number of different languages and multiple recipients depending on the preferences of the client. </p>
+                                        <a class="news_1 btn btn-primary btn-xs hvr-shutter-out-horizontal" data-toggle="modal" data-target="#News_3">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{> news1}} {{> news2}} {{> news3}}
+    </section>
+</template>
+<template name="news_1">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title" id="myModalLabel">OneAston Becomes Temenos Certified Partner</h3>
+            </div>
+            <section class="inner-section news_wrapper">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <h2 class="main-header one-text-color" style="margin-top:0.6em;">OneAston Becomes Temenos Certified Partner
+</h2>
+                </div>
+                <div class="col-sm-offset-2 col-sm-8">
+                    <img src="../images/News_temenos-partner1.jpg" width="50%" class="hidden-xs hidden-sm">
+                    <p>Building on the growth of the Private Banking industry in Asia and the successful collaboration with Temenos in the region, OneAston has become a certified partner of Temenos for WeathSuite. Under the certified partner program, OneAston will have access into the Temenos partner support network and will be able to participate in the Temenos training and resource certification initiative. The two companies will work together to further expand their mutual success in implementing the Temenos Triple’A and T24 solutions which are now established as the leading Private Banking solution in Asia. </p>
+
+                    <p>Temenos and OneAston have already worked closely together over the past four years and OneAston has undertaken five Triple’A implementations in partnership with Temenos, in addition to a number projects directly with Triple’A customers in the region. The two companies have a provern track record in joint initiatives and have completed a number of successful projects together in the region.
+                    </p>
+                    <p>
+                        OneAston has experienced sold growth since its launch in 2012 and now has over 14 clients and some 40 consultants experienced in the Temenos WealthSuite components throughout Asia.
+                    </p>
+                </div>
+            </section>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </div>
+        </div>
+    </div>
+</template>

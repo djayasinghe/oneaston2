@@ -9,4 +9,15 @@ Template.index.onRendered(function () {
         
 });
 Template.index.events({ 
+//    
+//   'click .news_1': function () {
+//       console.log("DIlan");
+////    BootstrapModalPrompt.prompt({
+////      dialogTemplate: Template.news_1
+////    });
+//       
+//       var bModal = BModals.showNew('news_1', function () {
+//    return MyCollection.findOne(colectionId);
+//});
+//  }
 }); 

@@ -11,11 +11,14 @@
 Template.layout.onRendered(function() {
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
-
 });
-Template.layout.events({});
-
-                         
+Template.layout.events({
+    'click .press-bt': function() {
+        $( ".modal-backdrop").hide();
+        console.log("DIlan2");
+        $( ".modal" ).hide();
+    }
+});                        
 Template.layout2.onRendered(function() {
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');

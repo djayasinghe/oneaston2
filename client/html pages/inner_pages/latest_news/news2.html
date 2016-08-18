@@ -1,31 +1,66 @@
 <template name="news2">
-<section class="inner-page-main-bg-image">
-        <img src="../images/ip-img5.jpg">
+<!--
+ <section class="inner-page-main-bg-image">
+        <img src="../images/ip-News.jpg">
         <div class="intro hidden-xs">
-            <h1 class="animated fadeInDown">Check what’s new </h1>
-            <div class="who-creates animated fadeInUp">
-Go through our latest news <br> and get updated
-</div>
+            <h1 class="animated fadeInDown">Latest Updates
+</h1>
+            <div class="who-creates animated fadeInUp"> What’s New at OneAston
+            </div>
         </div>
     </section>
- <section class="inner-section" style="overflow:hidden;">
-     <div class="col-sm-offset-2 col-sm-8">
-        <h2 class="main-header one-text-color" style="margin-top:0.6em;">OneAston Expands to Australia. In line with it’s Asian 
-growth Strategy.. 
-</h2>
-     
-         </div>
-    </section>
-    <section class="inner-page-main-bg-image">
+    <section class="inner-section news_wrapper">
         <div class="col-sm-offset-2 col-sm-8">
-        <img src="../images/ip-img6.jpg">
+            <h2 class="main-header one-text-color" style="margin-top:0.6em;">Bank of Montreal T24 project
+
+</h2>
+        </div>
+        <div class="col-sm-offset-2 col-sm-8">
+            <img src="../images/News_bank_of.jpg" width="50%" class="hidden-xs hidden-sm">
+            <p>OneAston has been selected as the implementation partner by the Bank of Montreal for their Temenos T24 implementation in Singapore and Hong Kong. As an existing user of Triple’A Plus, Bank of Montreal will be replacing their existing core banking system with T24 adopting the integrated WealthSuite strategy of Temenos. 
+ </p>
+
+            <p>With a targeted live date of August 2017, T24 will be implemented as the core transaction processing, settlement and accounting solution of the Private Bank. It will be linked to Triple’A Plus which will perform the client onboarding, order capture and collateral management functions, together with the detailed client reporting. The combined solution will cover the wide range of investment products offered by the Private Bank and will improve the operational efficiency moving forward.
+
+            </p>
+            <p>
+              As an existing service provider of the Bank of Montreal for the Triple’A solution, and with their detailed knowledge of the T24 application, OneAston was chosen as the prime implementation partner working together with the Bank of Montreal and Temenos teams to ensure the successful deployment of the solution. OneAston will be responsible for providing the business consultancy, integration and system configuration of the combined solution.
+
+
+            </p>
+
         </div>
     </section>
-   
-    <section class="inner-section"> 
-          <div class="col-sm-offset-2 col-sm-8">
-        <p>In line with it's Asian growth strategy, OneAston has opened an Australian operation, based in Melbourne. With the continued growth of the Australian financial markets, and the increasing need to expand existing platforms to accommodate market changes, reinforcing core software platforms continues to become a top priority for Australian financial institutions. Built on the strengths of the OneAston model, the new operation will mean that the OneAston products and services can now be provided and supported within the Australasian market. "We are confident that our move into the Australian market will further enhance our company value proposition to all clients and generate good growth to our business." says Dave White, co-founder and Director of OneAston.</p>
-       
-        </div> 
-    </section>
+    
+-->
+    
+    <div class="modal fade" id="News_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="{{pathFor route='press' name='press'}}" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+        <h4 class="modal-title" >Bank of Montreal T24 project</h4>
+      </div>
+      <div class="modal-body">
+         <img src="../images/News_bank_of.jpg" width="50%" class="hidden-xs hidden-sm">
+            <p>OneAston has been selected as the implementation partner by the Bank of Montreal for their Temenos T24 implementation in Singapore and Hong Kong. As an existing user of Triple’A Plus, Bank of Montreal will be replacing their existing core banking system with T24 adopting the integrated WealthSuite strategy of Temenos. 
+ </p>
+
+            <p>With a targeted live date of August 2017, T24 will be implemented as the core transaction processing, settlement and accounting solution of the Private Bank. It will be linked to Triple’A Plus which will perform the client onboarding, order capture and collateral management functions, together with the detailed client reporting. The combined solution will cover the wide range of investment products offered by the Private Bank and will improve the operational efficiency moving forward.
+
+            </p>
+            <p>
+              As an existing service provider of the Bank of Montreal for the Triple’A solution, and with their detailed knowledge of the T24 application, OneAston was chosen as the prime implementation partner working together with the Bank of Montreal and Temenos teams to ensure the successful deployment of the solution. OneAston will be responsible for providing the business consultancy, integration and system configuration of the combined solution.
+
+
+            </p>
+
+      </div>
+      <div class="modal-footer">
+        
+        <a href=""  class=" btn btn-primary hvr-shutter-out-horizontal" data-dismiss="modal" aria-label="Close">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
 </template>

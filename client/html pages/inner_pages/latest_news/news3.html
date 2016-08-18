@@ -1,31 +1,58 @@
 <template name="news3">
+<!--
 <section class="inner-page-main-bg-image">
-        <img src="../images/ip-img5.jpg">
+        <img src="../images/ip-News.jpg">
         <div class="intro hidden-xs">
-            <h1 class="animated fadeInDown">Check what’s new </h1>
-            <div class="who-creates animated fadeInUp">
-Go through our latest news <br> and get updated
-</div>
+            <h1 class="animated fadeInDown">Latest Updates
+</h1>
+            <div class="who-creates animated fadeInUp"> What’s New at OneAston
+            </div>
         </div>
     </section>
- <section class="inner-section" style="overflow:hidden;">
-     <div class="col-sm-offset-2 col-sm-8">
-        <h2 class="main-header one-text-color" style="margin-top:0.6em;">OneAston Expands to Australia. In line with it’s Asian 
-growth Strategy.. 
-</h2>
-     
-         </div>
-    </section>
-    <section class="inner-page-main-bg-image">
+    <section class="inner-section news_wrapper">
         <div class="col-sm-offset-2 col-sm-8">
-        <img src="../images/ip-img6.jpg">
+            <h2 class="main-header one-text-color" style="margin-top:0.6em;">Expanding the Digital Channel - OneNotify Launched 
+
+</h2>
+        </div>
+        <div class="col-sm-offset-2 col-sm-8">
+            <img src="../images/News_testing.jpg" width="50%" class="hidden-xs hidden-sm">
+            <p>OneAston has launched its new digital channel delivery application OneNotify. OneNotify allows events detected in external systems to trigger notification messages to be sent by SMS, WeChat or Email. The notification messages are configurable and can be sent in a number of different languages and multiple recipients depending on the preferences of the client.  
+ </p>
+            <p>OneNotify is preconfigured with some standard notifications covering events such as Account Opening, Transaction Execution, Credit Monitoring, Ingoing/Outgoing Funds Transfer and Client Surveys. As an open architecture system, it is able to interface with multiple external systems and is delivered with a standard interface to the Temenos Triple’A Plus solution.
+            </p>
+            <p>
+              The product is currently being deployed at a client in Hong Kong together with Triple’A plus and has generated a great deal of interest from other Triple’A plus clients. For further information on OneNotify, <a href="{{pathFor route='one_notify' name='one_notify'}}">please click here.</a>
+            </p>
         </div>
     </section>
-   
-    <section class="inner-section"> 
-          <div class="col-sm-offset-2 col-sm-8">
-        <p>In line with it's Asian growth strategy, OneAston has opened an Australian operation, based in Melbourne. With the continued growth of the Australian financial markets, and the increasing need to expand existing platforms to accommodate market changes, reinforcing core software platforms continues to become a top priority for Australian financial institutions. Built on the strengths of the OneAston model, the new operation will mean that the OneAston products and services can now be provided and supported within the Australasian market. "We are confident that our move into the Australian market will further enhance our company value proposition to all clients and generate good growth to our business." says Dave White, co-founder and Director of OneAston.</p>
-       
-        </div> 
-    </section>
+-->
+    
+    
+    
+    <div class="modal fade" id="News_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="{{pathFor route='press' name='press'}}" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+        <h4 class="modal-title" >Expanding the Digital Channel - OneNotify Launched </h4>
+      </div>
+      <div class="modal-body">
+         <img src="../images/News_testing.jpg" width="50%" class="hidden-xs hidden-sm">
+            <p>OneAston has launched its new digital channel delivery application OneNotify. OneNotify allows events detected in external systems to trigger notification messages to be sent by SMS, WeChat or Email. The notification messages are configurable and can be sent in a number of different languages and multiple recipients depending on the preferences of the client.  
+ </p>
+            <p>OneNotify is preconfigured with some standard notifications covering events such as Account Opening, Transaction Execution, Credit Monitoring, Ingoing/Outgoing Funds Transfer and Client Surveys. As an open architecture system, it is able to interface with multiple external systems and is delivered with a standard interface to the Temenos Triple’A Plus solution.
+
+            </p>
+            <p>
+              The product is currently being deployed at a client in Hong Kong together with Triple’A plus and has generated a great deal of interest from other Triple’A plus clients. For further information on OneNotify, <a href="{{pathFor route='one_notify' name='one_notify'}}">please click here.</a>
+            </p>
+      </div>
+      <div class="modal-footer">
+        
+        <a href=""  class=" btn btn-primary hvr-shutter-out-horizontal" data-dismiss="modal" aria-label="Close">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
 </template>
