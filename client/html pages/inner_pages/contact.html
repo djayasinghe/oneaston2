@@ -29,7 +29,7 @@ Mall of Asia Complex Pasay City,  Philippines</p>
                     <p><i class="ion-ios-telephone"></i> +61 433 697 421</p>
                     <br>
                     <h3>Email us <a href="mailto:info@oneaston.com">info@oneaston.com</a></h3>
-                    <h3 style="margin:1em 0 1.5em 0;"><a href="https://www.google.com.sg/maps/place/Singapore+048619/@1.283242,103.848643,17z/data=!3m1!4b1!4m5!3m4!1s0x31da190c18caaee5:0x1300f7ac70e3b413!8m2!3d1.283242!4d103.850837" target="_blank">View our location in google map <i class="ion-ios-redo-outline"></i></a></h3>
+                    <h3 style="margin:1em 0 1.5em 0;"><a href="https://www.google.com.sg/maps/place/Singapore+048619/@1.283242,103.848643,17z/data=!3m1!4b1!4m5!3m4!1s0x31da190c18caaee5:0x1300f7ac70e3b413!8m2!3d1.283242!4d103.850837" target="_blank">View our head office location in google map <i class="ion-ios-redo-outline"></i></a></h3>
                 </div>
                  <div class="col-sm-8">{{>contactFormTemplate}}</div>
             </div>
@@ -45,16 +45,16 @@ Mall of Asia Complex Pasay City,  Philippines</p>
         <div class="row" style="margin-top:3em !important;">
         <div class="col-sm-6">
              <span class="input input--minoru">
-					<input class="input__field input__field--yoko" type="text" id="firstName" name="firstName"/>
-					<label class="input__label input__label--yoko" for="input-16">
-						<span class="input__label-content input__label-content--yoko">First Name</span>
+					<input class="input__field input__field--yoko contact_tb" type="text" id="firstName" name="firstName"/>
+					<label class="input__label input__label--yoko fname_label" for="input-16">
+						<span class="input__label-content input__label-content--yoko tb_name">First Name</span>                    
 					</label>
 				</span>
             </div>
             <div class="col-sm-6">
                 <span class="input input--minoru">
-					<input class="input__field input__field--yoko" type="text" id="lastName" name="lastName"/>
-					<label class="input__label input__label--yoko" for="input-16">
+					<input class="input__field input__field--yoko contact_tb" type="text" id="lastName" name="lastName"/>
+					<label class="input__label input__label--yoko lname_label" for="input-16">
 						<span class="input__label-content input__label-content--yoko">Last Name</span>
 					</label>
 				</span>
@@ -63,16 +63,16 @@ Mall of Asia Complex Pasay City,  Philippines</p>
          <div class="row">
         <div class="col-sm-6">
              <span class="input input--minoru">
-					<input class="input__field input__field--yoko" type="text" id="phone" name="phone"/>
-					<label class="input__label input__label--yoko" for="input-16">
+					<input class="input__field input__field--yoko contact_tb" type="text" id="email" name="email"/>
+					<label class="input__label input__label--yoko email_label" for="input-16">
 						<span class="input__label-content input__label-content--yoko">Email</span>
 					</label>
 				</span>
              </div>
             <div class="col-sm-6">
              <span class="input input--minoru">
-					<input class="input__field input__field--yoko" type="text" id="email" name="email"/>
-					<label class="input__label input__label--yoko" for="input-16">
+					<input class="input__field input__field--yoko contact_tb" type="text" id="mobile" name="mobile"/>
+					<label class="input__label input__label--yoko phone_label" for="input-16">
 						<span class="input__label-content input__label-content--yoko">Phone</span>
 					</label>
 				</span>
@@ -81,18 +81,15 @@ Mall of Asia Complex Pasay City,  Philippines</p>
         <div class="row">
             <div class="col-sm-12">
             <span class="input input--minoru">
-					<input class="input__field input__field--yoko" type="text" id="message" name="message"/>
-					<label class="input__label input__label--yoko" for="input-16">
+					<input class="input__field input__field--yoko contact_tb" type="text" id="msg" name="msg"/>
+					<label class="input__label input__label--yoko msg_label" for="input-16">
 						<span class="input__label-content input__label-content--yoko">Message</span>
 					</label>
 				</span>
-            
             </div>
         </div>    
        <div class="row">
-           <div class="col-sm-offset-9 col-sm-3"><button type="submit" id="sda" value="Send" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal"><i class="ion-ios-paperplane"> Send</i></button></div>
-           
+           <div class="col-sm-offset-9 col-sm-3"><button id="send_bt" type="submit"  value="Send" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal" disabled><i class="ion-ios-paperplane"> Send</i></button></div>
         </div>   
-        
     </form>
 </template>

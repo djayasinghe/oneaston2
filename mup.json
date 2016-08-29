@@ -17,13 +17,13 @@
   "setupNode": true,
 
   // WARNING: If nodeVersion omitted will setup 0.10.36 by default. Do not use v, only version number.
-  "nodeVersion": "0.10.41",
+  "nodeVersion": "0.10.40",
 
   // Install PhantomJS in the server
   "setupPhantom": true,
 
   // Application name (No spaces)
-  "appName": "DilanApp",
+  "appName": "myApp",
 
   // Location of app (local directory)
   "app": ".",
