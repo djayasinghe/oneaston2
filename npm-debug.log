@@ -1,136 +1,38 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ssh2' ]
-2 info using npm@3.10.7
-3 info using node@v0.10.36
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readGlobalPackageData
-7 silly fetchPackageMetaData ssh2
-8 silly fetchNamedPackageData ssh2
-9 silly mapToRegistry name ssh2
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry data { raw: 'ssh2',
-12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'ssh2',
-12 silly mapToRegistry   name: 'ssh2',
-12 silly mapToRegistry   rawSpec: '',
-12 silly mapToRegistry   spec: 'latest',
-12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/ssh2
-14 verbose request uri https://registry.npmjs.org/ssh2
-15 verbose request no auth needed
-16 info attempt registry request try #1 at 14:13:24
-17 verbose request id a5b43cbb6b38aad2
-18 verbose etag "3OHTE5JQ57NU9VM9KCLL5EIH4"
-19 http request GET https://registry.npmjs.org/ssh2
-20 http 304 https://registry.npmjs.org/ssh2
-21 verbose headers { date: 'Mon, 29 Aug 2016 06:13:25 GMT',
-21 verbose headers   via: '1.1 varnish',
-21 verbose headers   'cache-control': 'max-age=300',
-21 verbose headers   etag: '"3OHTE5JQ57NU9VM9KCLL5EIH4"',
-21 verbose headers   age: '138',
-21 verbose headers   connection: 'keep-alive',
-21 verbose headers   'x-served-by': 'cache-fra1224-FRA',
-21 verbose headers   'x-cache': 'HIT',
-21 verbose headers   'x-cache-hits': '1',
-21 verbose headers   'x-timer': 'S1472451205.172115,VS0,VE0',
-21 verbose headers   vary: 'Accept-Encoding' }
-22 silly get cb [ 304,
-22 silly get   { date: 'Mon, 29 Aug 2016 06:13:25 GMT',
-22 silly get     via: '1.1 varnish',
-22 silly get     'cache-control': 'max-age=300',
-22 silly get     etag: '"3OHTE5JQ57NU9VM9KCLL5EIH4"',
-22 silly get     age: '138',
-22 silly get     connection: 'keep-alive',
-22 silly get     'x-served-by': 'cache-fra1224-FRA',
-22 silly get     'x-cache': 'HIT',
-22 silly get     'x-cache-hits': '1',
-22 silly get     'x-timer': 'S1472451205.172115,VS0,VE0',
-22 silly get     vary: 'Accept-Encoding' } ]
-23 verbose etag https://registry.npmjs.org/ssh2 from cache
-24 verbose get saving ssh2 to /Users/dilanjayasinghe/.npm/registry.npmjs.org/ssh2/.cache.json
-25 verbose correctMkdir /Users/dilanjayasinghe/.npm correctMkdir not in flight; initializing
-26 silly install normalizeTree
-27 silly loadCurrentTree Finishing
-28 silly loadIdealTree Starting
-29 silly install loadIdealTree
-30 silly cloneCurrentTree Starting
-31 silly install cloneCurrentTreeToIdealTree
-32 silly cloneCurrentTree Finishing
-33 silly loadShrinkwrap Starting
-34 silly install loadShrinkwrap
-35 silly loadShrinkwrap Finishing
-36 silly loadAllDepsIntoIdealTree Starting
-37 silly install loadAllDepsIntoIdealTree
-38 silly resolveWithNewModule ssh2@0.5.1 checking installable status
-39 silly cache add args [ 'ssh2', null ]
-40 verbose cache add spec ssh2
-41 silly cache add parsed spec { raw: 'ssh2',
-41 silly cache add   scope: null,
-41 silly cache add   escapedName: 'ssh2',
-41 silly cache add   name: 'ssh2',
-41 silly cache add   rawSpec: '',
-41 silly cache add   spec: 'latest',
-41 silly cache add   type: 'tag' }
-42 silly addNamed ssh2@latest
-43 verbose addNamed "latest" is being treated as a dist-tag for ssh2
-44 info addNameTag [ 'ssh2', 'latest' ]
-45 silly mapToRegistry name ssh2
-46 silly mapToRegistry using default registry
-47 silly mapToRegistry registry https://registry.npmjs.org/
-48 silly mapToRegistry data { raw: 'ssh2',
-48 silly mapToRegistry   scope: null,
-48 silly mapToRegistry   escapedName: 'ssh2',
-48 silly mapToRegistry   name: 'ssh2',
-48 silly mapToRegistry   rawSpec: '',
-48 silly mapToRegistry   spec: 'latest',
-48 silly mapToRegistry   type: 'tag' }
-49 silly mapToRegistry uri https://registry.npmjs.org/ssh2
-50 verbose addNameTag registry:https://registry.npmjs.org/ssh2 not in flight; fetching
-51 verbose get https://registry.npmjs.org/ssh2 not expired, no request
-52 silly addNameTag next cb for ssh2 with tag latest
-53 silly addNamed ssh2@0.5.1
-54 verbose addNamed "0.5.1" is a plain semver version for ssh2
-55 silly mapToRegistry name ssh2
-56 silly mapToRegistry using default registry
-57 silly mapToRegistry registry https://registry.npmjs.org/
-58 silly mapToRegistry data { raw: 'ssh2',
-58 silly mapToRegistry   scope: null,
-58 silly mapToRegistry   escapedName: 'ssh2',
-58 silly mapToRegistry   name: 'ssh2',
-58 silly mapToRegistry   rawSpec: '',
-58 silly mapToRegistry   spec: 'latest',
-58 silly mapToRegistry   type: 'tag' }
-59 silly mapToRegistry uri https://registry.npmjs.org/ssh2
-60 verbose addRemoteTarball https://registry.npmjs.org/ssh2/-/ssh2-0.5.1.tgz not in flight; adding
-61 verbose addRemoteTarball [ 'https://registry.npmjs.org/ssh2/-/ssh2-0.5.1.tgz',
-61 verbose addRemoteTarball   'c06291fa328b594815a16b1ac058f3b18407917b' ]
-62 info retry fetch attempt 1 at 14:13:25
-63 info attempt registry request try #1 at 14:13:25
-64 http fetch GET https://registry.npmjs.org/ssh2/-/ssh2-0.5.1.tgz
-65 http fetch 200 https://registry.npmjs.org/ssh2/-/ssh2-0.5.1.tgz
-66 silly fetchAndShaCheck shasum c06291fa328b594815a16b1ac058f3b18407917b
-67 verbose addTmpTarball /var/folders/qc/p5rjfhxx66v3qc91s75jml8h0000gn/T/npm-7602-83a6e09f/registry.npmjs.org/ssh2/-/ssh2-0.5.1.tgz not in flight; adding
-68 verbose addTmpTarball already have metadata; skipping unpack for ssh2@0.5.1
-69 verbose correctMkdir /Users/dilanjayasinghe/.npm correctMkdir not in flight; initializing
-70 silly rollbackFailedOptional Starting
-71 silly rollbackFailedOptional Finishing
-72 silly runTopLevelLifecycles Finishing
-73 silly install printInstalled
-74 verbose stack Error: EACCES, mkdir '/Users/dilanjayasinghe/.npm/ssh2/0.5.1'
-75 verbose cwd /Users/dilanjayasinghe/oneaston2
-76 error Darwin 15.6.0
-77 error argv "node" "/usr/local/bin/npm" "install" "-g" "ssh2"
-78 error node v0.10.36
-79 error npm  v3.10.7
-80 error path /Users/dilanjayasinghe/.npm/ssh2/0.5.1
-81 error code EACCES
-82 error errno 3
-83 error Error: EACCES, mkdir '/Users/dilanjayasinghe/.npm/ssh2/0.5.1'
-83 error  { [Error: EACCES, mkdir '/Users/dilanjayasinghe/.npm/ssh2/0.5.1']
-83 error   errno: 3,
-83 error   code: 'EACCES',
-83 error   path: '/Users/dilanjayasinghe/.npm/ssh2/0.5.1' }
-84 error Please try running this command again as root/Administrator.
-85 verbose exit [ 3, true ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'un', 'install', '-g', 'mupx' ]
+2 info using npm@1.4.29
+3 info using node@v0.10.43
+4 warn deprecated This version of npm lacks support for important features,
+5 warn deprecated such as scoped packages, offered by the primary npm
+6 warn deprecated registry. Consider upgrading to at least npm@2, if not the
+7 warn deprecated latest stable version. To upgrade to npm@2, run:
+8 warn deprecated npm -g install npm@latest-2
+9 warn deprecated To upgrade to the latest stable version, run:
+10 warn deprecated npm -g install npm@latest
+11 warn deprecated (Depending on how Node.js was installed on your system, you
+12 warn deprecated may need to prefix the preceding commands with `sudo`, or if
+13 warn deprecated on Windows, run them from an Administrator prompt.)
+14 warn deprecated If you're running the version of npm bundled with
+15 warn deprecated Node.js 0.10 LTS, be aware that the next version of 0.10 LTS
+16 warn deprecated will be bundled with a version of npm@2, which has some small
+17 warn deprecated backwards-incompatible changes made to `npm run-script` and
+18 warn deprecated semver behavior.
+19 warn uninstall not installed in /usr/local/lib/node_modules: "install"
+20 verbose lib/node_modules/mupx unbuild
+21 info preuninstall mupx@1.5.3
+22 info uninstall mupx@1.5.3
+23 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild mupx@1.5.3
+24 verbose /usr/local/bin,[object Object] binRoot
+25 error Error: EACCES, unlink '/usr/local/bin/mupx'
+25 error  { [Error: EACCES, unlink '/usr/local/bin/mupx'] errno: 3, code: 'EACCES', path: '/usr/local/bin/mupx' }
+26 error Please try running this command again as root/Administrator.
+27 error System Darwin 15.6.0
+28 error command "node" "/usr/local/bin/npm" "un" "install" "-g" "mupx"
+29 error cwd /Users/dilanjayasinghe/oneaston2
+30 error node -v v0.10.43
+31 error npm -v 1.4.29
+32 error path /usr/local/bin/mupx
+33 error code EACCES
+34 error errno 3
+35 error stack Error: EACCES, unlink '/usr/local/bin/mupx'
+36 verbose exit [ 3, true ]

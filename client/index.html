@@ -278,7 +278,7 @@
     <section class="inner-section" style="overflow:hidden;margin-bottom:5em;">
         
         <div class="col-sm-6"><h2 class="main-header">The fastest growing wealth market <br>in the world <br> <span class="oneaston-font"><b>OneAston</b> in Asia</span></h2>
-        <div class="col-sm-offset-4 col-sm-4 text-center"><a href=" {{pathFor route='case_studies' name='case_studies'}}" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">Learn More</a></div></div>
+        <div class="col-sm-offset-4 col-sm-4 text-center"><a href="" data-toggle="modal" data-target="#wealth_leader" class="btn btn-primary btn-block btn-lg hvr-shutter-out-horizontal">Learn More</a></div></div>
         <div class="col-sm-6">
         <img src="/images/worldmap.png" width="100%">
         </div>
@@ -326,7 +326,7 @@
         </div>
     </section>
 
-    {{> news1_homepage}} {{> news2_homepage}} {{> news3_homepage}}
+    {{> news1_homepage}} {{> news2_homepage}} {{> news3_homepage}} {{> wealth_leader}}
 </template>
 
 <template name="news1_homepage">
@@ -410,6 +410,35 @@
                 <div class="modal-footer">
 
                     <a href="{{pathFor route='press' name='press'}}" class="press-bt btn btn-primary hvr-shutter-out-horizontal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="wealth_leader">
+    <div class="modal fade" id="wealth_leader" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="{{pathFor route='press' name='press'}}" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                    <h4 class="modal-title">The fastest growing wealth market in the world OneAston in Asia
+</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The Asian-Pacific region has passed both North America and Europe as having the largest HNWI population as outlined in the latest <a href="https://www.worldwealthreport.com/" target="_blank">Wealth Report</a> as published by Cap Gemini. It is expected to overtake North America's in HNWI wealth in 2016 and Asia-Pacific to continue to expand more in than any other region of the world. The region is home to many of the fastest emerging economies, such as China, India, Thailand and Indonesia, but it in particular being fueled by the grow of China and India. China and India represent nearly 10% of global HNWI wealth, and account for 17% of the global increase in new wealth since 2006.
+
+                    </p>
+                    <p>With our corporate head office based in Singapore and offices in Hong Kong, Australia and the Philippines, OneAston is established as an Asian based company dedicated to the delivery of quality wealth management solutions. As an Asian company, employing local staff and working with both local and international banks in the region, OneAston has a solid understanding of the local markets.
+
+
+                    </p>
+                    <p>
+                       Having undertaken missions in the Middle East and our experience in Islamic wealth management solutions, OneAston will be opening its presence to Dubai by Q1 2017 to service the growing wealth market in the region.
+                    </p>
+                </div>
+                <div class="modal-footer">
+
+                    <a href="" data-dismiss="modal" aria-label="Close" class="press-bt btn btn-primary hvr-shutter-out-horizontal">Close</a>
                 </div>
             </div>
         </div>
